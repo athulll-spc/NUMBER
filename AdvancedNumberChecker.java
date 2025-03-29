@@ -35,13 +35,17 @@ public class AdvancedNumberChecker {
     }
 
     boolean isArmstrong(int check) {
+        int original = check;
         int sum = 0;
+        int numDigits = String.valueOf(check).length();
         while (check > 0) {
-            sum = (int) (sum + Math.pow(check % 10, 3));
+            int digit = check % 10;
+            sum += Math.pow(digit, numDigits);
             check /= 10;
         }
-        return sum == number;
+        return sum == original;
     }
+    
 
     boolean isPalindrome(int check) {
         if (Integer.toString(check).length() == 1) {
