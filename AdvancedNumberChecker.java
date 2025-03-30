@@ -1,3 +1,40 @@
+/**
+ * This program checks whether a given number satisfies different mathematical properties.
+ * 
+ * The number is tested for:
+ * 1. **Prime Number**: A number greater than 1 that has only two factors (1 and itself).
+ * 2. **Armstrong Number**: A number that is equal to the sum of its own digits each raised to the power of the number of digits.
+ * 3. **Palindrome**: A number that reads the same forward and backward.
+ * 4. **Perfect Number**: A number that is equal to the sum of its proper divisors (excluding itself).
+ * 
+ * The program works as follows:
+ * - The user inputs a number.
+ * - The program checks and prints whether the number satisfies each of the above conditions.
+ * 
+ * Example 1:
+ * Input: 153
+ * Output:
+ * PRIME  :  false
+ * ARMSTRONG  :  true
+ * PALINDROME  :  false
+ * PERFECT  :  false
+ * 
+ * Example 2:
+ * Input: 28
+ * Output:
+ * PRIME  :  false
+ * ARMSTRONG  :  false
+ * PALINDROME  :  false
+ * PERFECT  :  true
+ * 
+ * Example 3:
+ * Input: 131
+ * Output:
+ * PRIME  :  true
+ * ARMSTRONG  :  false
+ * PALINDROME  :  true
+ * PERFECT  :  false
+ */
 
 import java.util.Scanner;
 
